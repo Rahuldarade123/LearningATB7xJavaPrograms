@@ -1,43 +1,33 @@
 package ex_20072024;
 
+import java.util.Scanner;
+
 public class MaxsalaryFromArray {
     public static void main(String[] args) {
-        int[] arr={30,50,60,90,10,100,999};
-if(arr[0]>arr[1] && arr[1]>arr[2] && arr[2]>arr[3] && arr[3]>arr[4] && arr[4]>arr[5] && arr[5]>arr[6] && arr[0]>arr[6]){
-    System.out.println("Max number is"+ arr[0]);
+        int[] arr=new int [4];
+        Scanner scan=new Scanner(System.in);
+        System.out.println("Enter 1st number ");
+         arr[0] =scan.nextInt();
+        System.out.println("Enter 2st number ");
+        arr[1] =scan.nextInt();
+        System.out.println("Enter 3st number ");
+        arr[2] =scan.nextInt();
+        System.out.println("Enter 4st number ");
+        arr[3] =scan.nextInt();
+        System.out.println("Your array is");
+
+for(int i=0;i<arr.length;i++){
+    System.out.println(arr[i]);
+
 }
-else if(arr[1]>arr[0] && arr[0]>arr[2] && arr[2]>arr[3] && arr[3]>arr[4] && arr[4]>arr[5] && arr[5]>arr[6] && arr[1]>arr[6]){
-
-    System.out.println("Max number is"+arr[1]);
+        System.out.println("Max number is below");
+int max=arr[0];
+for(int j=0;j<arr.length;j++){
+    if (arr[j]>max){
+       max=arr[j];
+    }
 }
-//arr[]2
-else if(arr[2]>arr[0] && arr[0]>arr[1] && arr[1]>arr[2] && arr[2]>arr[3] && arr[3]>arr[4] && arr[4]>arr[5] && arr[5]>arr[6]){
-
-    System.out.println("Max number is"+arr[2]);
-}
-//arr[3]
-else if(arr[3]>arr[0] && arr[1]>arr[2] && arr[2]>arr[3] && arr[3]>arr[4] && arr[4]>arr[5] && arr[5]>arr[6]){
-
-    System.out.println("Max number is"+arr[3]);
-}
-//arr[4]
-else if(arr[1]>arr[1] && arr[1]>arr[2] && arr[2]>arr[3] && arr[3]>arr[4] && arr[4]>arr[5] && arr[5]>arr[6]){
-
-    System.out.println("Max number is"+arr[4]);
-}
-//arr[5]
-else if(arr[1]>arr[1] && arr[1]>arr[2] && arr[2]>arr[3] && arr[3]>arr[4] && arr[4]>arr[5] && arr[5]>arr[6]){
-
-    System.out.println("Max number is"+arr[5]);
-}
-//arr[6]
-else if(arr[1]>arr[1] && arr[1]>arr[2] && arr[2]>arr[3] && arr[3]>arr[4] && arr[4]>arr[5] && arr[5]>arr[6]){
-
-    System.out.println("Max number is"+arr[6]);
-}
-
-
-
+        System.out.println("MAx number is "+max);
 
     }
 }
