@@ -10,5 +10,6 @@ public class MainClasscalling {
         LearnObjectclass P2=new LearnObjectclass();
         String str=P2.Run();
         System.out.println(str);
+
     }
 }
